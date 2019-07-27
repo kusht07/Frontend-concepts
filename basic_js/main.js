@@ -171,11 +171,15 @@ console.log(todoTextArray);
 
 // filter() - Returns array based on condition
 const todo1 = todos.filter(function(todo) {
-  // Return only todos where id is 1
-  return todo.id === 1; 
-});
+    return todo.isComplete === true; 
+    }).map(function(todo){
+          return todo.text
+    });
 
+    //filter gives array where todo is completed, 
+    // map gives fetch array of those with isscomplete true
 
+console.log(todo1)
 // CONDITIONALS
 
 // Simple If/Else Statement
