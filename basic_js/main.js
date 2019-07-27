@@ -83,8 +83,8 @@ const person = {
   hobbies: ['music', 'movies', 'sports'],
   address: {
     street: '50 Main st',
-    city: 'Boston',
-    state: 'MA'
+    city: 'Winnipeg',
+    state: 'MB'
   }
 }
  const {firstName,age, address:{city}} = person
