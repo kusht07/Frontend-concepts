@@ -294,9 +294,6 @@ class Person {
 const person1 = new Person('John', 'Doe', '7-8-80');
 console.log(person1.getBirthYear());
 
-// destructuring
-const {firstName, lastname} = person
-console.log(firstName)
 
 // ELEMENT SELECTORS
 
