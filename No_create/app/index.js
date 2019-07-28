@@ -5,26 +5,26 @@ import './index.css'   // works through wbpack styleloader
 // webpack - bundle the imports
 //babel compiles jsx
 
-function isLoading() {
+function isAuthed() {
     return true
 }
 
+function isNew() {
+    return false
+}
 
 class App extends React.Component {  // create component 
-    name = 'Kush'
-
     render(){ 
-        if (isLoading() === true) {
-            return null
+        let name = "Kush"
+        const Authed = isAuthed()
+        const firstLogin = isNew()
+        if(firstLogin === true) {
+            return <h1>Welcome!!</h1>
+        } else if (Authed === true) {
+            return <h1>Welcome back : {name}</h1>
+        } else {
+            return <h1>Please login</h1>
         }
-
-        return(
-            <div>
-                <h1>Hello {name}!</h1>
-                <p>Today is {new Date().toLocaleDateString()}</p>
-                <p>What is 2 + 2 {2 + 2}</p>
-            </div> //JSX- babel will convert it to js
-        )
     }
 }
 
