@@ -39,3 +39,6 @@ html, body, #app {
     text-decoration: none;
     color: inherit;
   }
+  button:focus {
+    outline:0;
+  }
