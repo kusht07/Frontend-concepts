@@ -13,8 +13,8 @@ function MainContent() {
       timeOfDay = "night"
     }
     return (
-      <h1>Good {timeOfDay}!</h1>
-    )
+        <h1 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Good {timeOfDay}!</h1> // styles have to be in {{key:value}} and - are replaced with camelcase letter C
+        )
   }
 
 export default MainContent
