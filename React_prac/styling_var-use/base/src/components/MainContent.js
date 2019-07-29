@@ -12,8 +12,13 @@ function MainContent() {
     } else {
       timeOfDay = "night"
     }
+    const styles = {
+        color: "#FF8C00", 
+        backgroundColor: "#FF2D00",
+        fontSize: "200%"
+      }
     return (
-        <h1 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Good {timeOfDay}!</h1> // styles have to be in {{key:value}} and - are replaced with camelcase letter C
+        <h1 style={styles}>Good {timeOfDay}!</h1> // styles have to be in {{key:value}} and - are replaced with camelcase letter C
         )
   }
 
