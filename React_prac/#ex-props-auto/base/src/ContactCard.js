@@ -7,10 +7,10 @@ function ContactCard(props) {
     // }
     return (
         <div className="contact-card">
-            <img src={props.contacts.imgUrl} alt="contactimage"/>
-            <h3>{props.contacts.name}</h3>
-            <p>Phone: {props.contacts.phone}</p>
-            <p>Email: {props.contacts.email}</p>
+            <img src={props.card.imgUrl} alt="contactimage"/>
+            <h3>{props.card.name}</h3>
+            <p>Phone: {props.card.phone}</p>
+            <p>Email: {props.card.email}</p>
         </div>
     )
 }
